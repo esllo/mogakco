@@ -1,0 +1,19 @@
+{
+  "name": "mogakco",
+  "version": "0.1.0",
+  "description": "mogakco discord role management",
+  "main": "index.js",
+  "repository": "https://github.com/esllo/mogakco-bot.git",
+  "author": "esllo <master@esllo.com>",
+  "license": "MIT",
+  "workspaces": [
+    "bot",
+    "app"
+  ],
+  "packageManager": "yarn@3.2.1",
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
