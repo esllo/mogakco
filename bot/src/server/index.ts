@@ -25,7 +25,7 @@ function startServer(client: CustomClient) {
 
   const roleStorage: RoleStorage = {};
 
-  app.post('/grant/generate', (req: Request, res: Response) => {
+  app.post('/api/grant/generate', (req: Request, res: Response) => {
     try {
       const { guild, roles } = req.body;
       const code = uuid();
@@ -45,7 +45,7 @@ function startServer(client: CustomClient) {
     }
   });
 
-  app.get('/grant/:guild', (req: Request, res: Response) => {
+  app.get('/api/grant/:guild', (req: Request, res: Response) => {
     if (req.params.guild) {
       const guild = client.guilds
         .valueOf()
