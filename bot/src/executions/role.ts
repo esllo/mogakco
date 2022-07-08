@@ -59,7 +59,7 @@ const RoleExecution: Execution = {
       const button = new MessageButton()
         .setLabel('역할 코드 받으러가기')
         .setStyle('LINK')
-        .setURL('http://localhost:3000/grant/' + message.guildId);
+        .setURL('https://mgc.esllo.com/grant/' + message.guildId);
 
       const row = new MessageActionRow().addComponents(button);
       message.reply({
